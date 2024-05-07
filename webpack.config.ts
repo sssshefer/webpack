@@ -28,11 +28,17 @@ export default (env: EnvVariables) => {
         ],
         module: {
             rules: [
+                //order of rules is important
+                {
+                    test: /\.css$/i,
+                    use: ["style-loader", "css-loader"],
+                },
                 {
                     test: /\.tsx?$/,
                     use: 'ts-loader',
                     exclude: /node_modules/,
                 },
+
             ],
         },
         resolve: {
