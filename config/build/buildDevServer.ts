@@ -5,5 +5,7 @@ export function buildDevServer(options:BuildOptions):DevServerConfiguration{
     return {
         port: options.port ?? 5000,
         open: true,
+        //Only works for dev server, for nginx it requires proxy configuration to index.html
+        historyApiFallback: true,
     }
 }
