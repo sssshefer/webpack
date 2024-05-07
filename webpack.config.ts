@@ -10,6 +10,9 @@ interface EnvVariables {
 }
 
 export default (env: EnvVariables) => {
+
+    const isDev = env.mode === 'development';
+
     const config: webpack.Configuration = {
         mode: env.mode ?? 'development',
         //path is needed to support different operating systems
@@ -35,10 +38,11 @@ export default (env: EnvVariables) => {
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
         },
-        devServer:{
+        devtool: isDev ? 'inline-source-map':false,
+        devServer: isDev? {
             port: env.port ?? 5000,
             open: true,
-        }
+        }:undefined
 
     }
 return config
