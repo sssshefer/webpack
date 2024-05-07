@@ -1,9 +1,9 @@
-const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-module.exports = (env) => {
-    return {
+export default (env: any) => {
+    const config: webpack.Configuration = {
         mode: env.mode ?? 'development',
         //path is needed to support different operating systems
         entry: path.resolve(__dirname, 'src', 'index.ts'),
@@ -30,5 +30,5 @@ module.exports = (env) => {
         },
 
     }
-
+return config
 }
