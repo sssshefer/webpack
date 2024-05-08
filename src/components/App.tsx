@@ -6,17 +6,38 @@ import avatarPng from '@/assets/avatar.png'
 import avatarJpg from '@/assets/avatar.jpg'
 import AppImage from '@/assets/app-image.svg'
 
+// This function is redundant and tree shaking will remove it
+function treeShakingRedundantFunction() {
+    console.log('I am redundant function')
+}
+
 export const App = () => {
     const [count, setCount] = React.useState(0)
 
     const increment = () => setCount(prevState => prevState + 1)
+
+    if(__PLATFORM__ === 'desktop') {
+        return (
+            <div>
+                <h2>Desktop</h2>
+            </div>
+        )
+    }
+
+    if(__PLATFORM__ === 'mobile') {
+        return (
+            <div>
+                <h2>Mobile</h2>
+            </div>
+        )
+    }
     return (
         <div>
             <Link to={'/about'}>about </Link>
             <br/>
 
             <Link to={'/shop'}>shop </Link>
-
+             <h2>PLATFORM={__PLATFORM__}</h2>
             <h1>{count}</h1>
             <button className={cl.button} onClick={increment}>inc</button>
             <Outlet/>
