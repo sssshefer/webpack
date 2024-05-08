@@ -5,6 +5,8 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {BuildOptions} from "./types/types";
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import ReactRefreshPlugin from "@pmmmwh/react-refresh-webpack-plugin";
+import ReactRefreshWebpackPlugin from "@pmmmwh/react-refresh-webpack-plugin";
 
 export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): Configuration['plugins'] {
     const isDev = mode === 'development';
@@ -21,7 +23,8 @@ export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): C
     if (isDev) {
         plugins.push(new webpack.ProgressPlugin())
         //Separate type checking to another process and decrease build time
-        new ForkTsCheckerWebpackPlugin()
+        plugins.push(new ForkTsCheckerWebpackPlugin())
+        plugins.push(new ReactRefreshWebpackPlugin())
     }
 
     if (isProd) {

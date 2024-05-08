@@ -15,7 +15,6 @@ export const App = () => {
     const [count, setCount] = React.useState(0)
 
     const increment = () => setCount(prevState => prevState + 1)
-    treeShakingRedundantFunction('123')
     return (
         <div>
             <Link to={'/about'}>about </Link>
