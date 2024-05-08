@@ -11,7 +11,11 @@
     "allowSyntheticDefaultImports": true,
     //allowSyntheticDefaultImports: true allows default imports from modules with no default export.
     //We don't need to write * as default anymore.
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+        "@/*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {

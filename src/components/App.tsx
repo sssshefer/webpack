@@ -1,6 +1,7 @@
 import React from 'react';
 import cl from './App.module.scss';
 import {Link, Outlet} from "react-router-dom";
+import {About} from "@/pages/About";
 
 export const App = () => {
     const [count, setCount] = React.useState(0)
@@ -16,6 +17,7 @@ export const App = () => {
             <h1>{count}</h1>
             <button className={cl.button} onClick={increment}>inc</button>
             <Outlet/>
+            <About/>
         </div>
     );
 };
