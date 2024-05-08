@@ -4,6 +4,7 @@ import path from "path";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {BuildOptions} from "./types/types";
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): Configuration['plugins'] {
     const isDev = mode === 'development';
@@ -13,11 +14,14 @@ export function buildPlugins({mode, paths, analyzer, platform}: BuildOptions): C
         new HtmlWebpackPlugin({template:paths.html}),
         new DefinePlugin({
             __PLATFORM__: JSON.stringify(platform)
-        })
+        }),
+
     ];
 
     if (isDev) {
         plugins.push(new webpack.ProgressPlugin())
+        //Separate type checking to another process and decrease build time
+        new ForkTsCheckerWebpackPlugin()
     }
 
     if (isProd) {
