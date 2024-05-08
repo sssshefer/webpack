@@ -7,7 +7,7 @@ import avatarJpg from '@/assets/avatar.jpg'
 import AppImage from '@/assets/app-image.svg'
 
 // This function is redundant and tree shaking will remove it
-function treeShakingRedundantFunction() {
+function treeShakingRedundantFunction(a:number) {
     console.log('I am redundant function')
 }
 
@@ -15,22 +15,7 @@ export const App = () => {
     const [count, setCount] = React.useState(0)
 
     const increment = () => setCount(prevState => prevState + 1)
-
-    if(__PLATFORM__ === 'desktop') {
-        return (
-            <div>
-                <h2>Desktop</h2>
-            </div>
-        )
-    }
-
-    if(__PLATFORM__ === 'mobile') {
-        return (
-            <div>
-                <h2>Mobile</h2>
-            </div>
-        )
-    }
+    treeShakingRedundantFunction('123')
     return (
         <div>
             <Link to={'/about'}>about </Link>
