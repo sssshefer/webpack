@@ -1,1 +1,2 @@
-Learning Webpack
+# Every day Webpack features
+
