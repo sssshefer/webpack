@@ -20,6 +20,7 @@
     "@babel/preset-typescript": "^7.24.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "@svgr/webpack": "^8.1.0",
+    "@types/babel__core": "^7.20.5",
     "@types/node": "^20.12.10",
     "@types/webpack": "^5.28.5",
     "@types/webpack-bundle-analyzer": "^4.7.0",

@@ -16,12 +16,12 @@ export const App = () => {
 
     const increment = () => setCount(prevState => prevState + 1)
     return (
-        <div>
+        <div data-testid={'AppTestId'}>
             <Link to={'/about'}>about </Link>
             <br/>
 
             <Link to={'/shop'}>shop </Link>
-             <h2>PLATFORM={__PLATFORM__}</h2>
+             <h2 data-testid={'PlatformTestId'}>PLATFORM={__PLATFORM__}</h2>
             <h1>{count}</h1>
             <button className={cl.button} onClick={increment}>inc</button>
             <Outlet/>
