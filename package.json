@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.12.10",
     "@types/webpack": "^5.28.5",
     "@types/webpack-bundle-analyzer": "^4.7.0",
