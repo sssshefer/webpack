@@ -11,7 +11,7 @@ export const App = () => {
             <Link to={'/about'}>about </Link>
             <br/>
 
-            <Link to={'/shop'}>about </Link>
+            <Link to={'/shop'}>shop </Link>
 
             <h1>{count}</h1>
             <button className={cl.button} onClick={increment}>inc</button>
