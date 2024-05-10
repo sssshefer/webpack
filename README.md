@@ -22,3 +22,16 @@ This project inlcude
 17) Stop reloading page after changing the code with **HMR (Hot Module Replacemenet)**
 18) Use **favicon** and copy any other files to final build with **copy plugin**
 19) Use **Babel** and create **own plugins** with it
+
+How to run the proejct 
+```bash
+$ npm run start
+```
+
+How to make developer build
+```bash
+$ npm run build:dev
+
+How to make production build
+```bash
+$ npm run build:prod
