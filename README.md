@@ -1,8 +1,7 @@
 # Every Day Webpack Features
 
-This project inlcude
+## This project inlcude how to:
 
-### How to:
 1) Connect the **environment variables**
 2) Make **different build scenarios**: for production and development 
 3) Connect **HTML** to the application using webpack, configure **dynamic file names** in order to prevent client side files from being cashed
@@ -23,15 +22,17 @@ This project inlcude
 18) Use **favicon** and copy any other files to final build with **copy plugin**
 19) Use **Babel** and create **own plugins** with it
 
-How to run the proejct 
+### How to run the project 
 ```bash
 $ npm run start
 ```
 
-How to make developer build
+### How to make development build
 ```bash
 $ npm run build:dev
+```
 
-How to make production build
+### How to make production build
 ```bash
 $ npm run build:prod
+```
