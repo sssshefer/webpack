@@ -21,6 +21,11 @@
 17) Stop reloading page after changing the code with **HMR (Hot Module Replacemenet)**
 18) Use **favicon** and copy any other files to final build with **copy plugin**
 19) Use **Babel** and create **own plugins** with it
+    
+### Git clone the repo 
+```bash
+$ git clone https://github.com/sssshefer/webpack.git
+```
 
 ### How to run the project 
 ```bash
