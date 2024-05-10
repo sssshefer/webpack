@@ -27,17 +27,23 @@
 $ git clone https://github.com/sssshefer/webpack.git
 ```
 
-### How to run the project 
+### 1) How to run the project 
 ```bash
 $ npm run start
 ```
 
-### How to make development build
+### 2) How to make development build
 ```bash
 $ npm run build:dev
 ```
 
-### How to make production build
+### 3) How to make production build
 ```bash
 $ npm run build:prod
+```
+
+
+### 4) How to do typechecking
+```bash
+$ npm run typecheck
 ```
