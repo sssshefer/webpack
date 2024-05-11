@@ -1,5 +1,7 @@
 # Every Day Webpack Features
 
+This project serves as a comprehensive guide for using webpack effectively in web development. It covers essential features and provides practical insights and examples to help developers optimize their workflow and boost application performance
+
 ## This project inlcude how to:
 
 1) Connect the **environment variables**
