@@ -1,8 +1,9 @@
-# Every Day Webpack Features
+<p align="center"><img src="https://github.com/sssshefer/webpack/assets/63253440/06fcf7d0-9dce-4f60-99ef-1683c4552170" alt="webpack-icon" height="150"><p/>
+
+# Every Day Webpack Features  
+
 
 This project serves as a comprehensive guide for using webpack effectively in web development. It covers essential features and provides practical insights and examples to help developers optimize their workflow and boost application performance
-
-<img src="https://github.com/sssshefer/webpack/assets/63253440/6e111d7d-3312-4b66-a625-f38c5f6c244a" alt="webpack-icon" height="250">
 
 ## This project inlcude how to:
 
