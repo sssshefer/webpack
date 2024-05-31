@@ -1,4 +1,4 @@
-<img src="https://github.com/sssshefer/webpack/assets/63253440/6e111d7d-3312-4b66-a625-f38c5f6c244a" alt="webpack-icon" height="300">
+<img src="https://github.com/sssshefer/webpack/assets/63253440/6e111d7d-3312-4b66-a625-f38c5f6c244a" alt="webpack-icon" height="250">
 
 # Every Day Webpack Features
 
